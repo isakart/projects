@@ -1,0 +1,100 @@
+#carousel-example-generic
+{
+    top: 0px;
+    z-index: 1; 
+}
+
+.item
+{
+   	width: 100%;
+    height: 100vh;
+}
+
+
+.carousel-caption
+{
+	margin-bottom: 10%;
+	background: rgba(0,0,0,0.55);
+	border-radius: 35px;
+
+}
+
+.carousel-caption h4
+{
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+}
+
+
+.carousel-caption p
+{
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+}
+
+
+
+/*slides*/
+
+#slide1
+{
+	background: url('../img/un_solo_dios.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide2
+{
+	background: url('../img/no_blasfemar.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide3
+{
+	background: url('../img/no_matar.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide4
+{
+	background: url('../img/respeto_familia.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide5
+{
+	background: url('../img/no_robar.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide6
+{
+	background: url('../img/respeto_criaturas.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide7
+{
+	background: url('../img/justicia.jpg') top center no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
