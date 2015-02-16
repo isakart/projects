@@ -1,0 +1,31 @@
+ #map-container 
+{ 
+    height: 25vh; 
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#formularioContacto
+{
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
+#informaionContacto
+{
+    margin-top: 5%;
+}
+
+#cerrarFormularioContacto
+
+{
+    margin-right: 2%;
+    
+}
+
+#infoContainer
+{
+    margin-top: 5%;
+}

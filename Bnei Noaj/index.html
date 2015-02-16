@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+  <head>	  
+    <title>Bnei Noaj Costa Rica</title>
+	  
+<!--   styles-->
+	  
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+	  
+	  
+<!--	  custom styles-->
+	  <link href="css/style.css" rel="stylesheet">
+	  
+	  
+<!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+		
+  </head>
+  <body>
+		<div id="container">
+
+				  <!--navbar-->				
+
+				<nav class="navbar navbar-inverse">
+						  <div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							  <a class="navbar-brand" href="#">bneinoajcostarica.com</a>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							  <ul class="nav navbar-nav pull-right">
+								<li class="active"><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
+								<li><a data-toggle="modal" data-target="#quienesSomosModal">Quienes somos</a></li>
+								<li><a href="#">Art&iacute;culos</a></li>
+								<li><a href="#">Foro</a></li>
+								<li><a data-toggle="modal" data-target="#contactenosModal" href="#" onclick="init_map()">Cont&aacute;ctanos</a></li>
+							  </ul>		      
+							</div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>	<!-- end nav bar -->
+				
+				
+					<!--carousel-->
+				
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+						  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">		
+						 
+						<div class="item active" id="slide1">
+						  <div class="carousel-caption">
+							<h4>1. Tener un solo Dios</h4>
+							<p>Saber que existe un solo D-os, Infinito y Supremo sobre todas las cosas.</p>
+						
+						  </div>
+						</div>
+						  
+						  
+						<div class="item" id="slide2">
+						  <div class="carousel-caption">
+							<h4>2. Respetar al Creador</h4>
+							<p>Por m&aacute;s frustrado o enojado que pudieses estar, jam&aacute;s expreses tales sentimientos maldiciendo al Creador.</p>
+						
+						  </div>				
+						</div>
+						
+						<div class="item" id="slide3">
+						  <div class="carousel-caption">
+							<h4>3. No cometer asesinato</h4>
+							<p>Salvar una vida es salvar un mundo entero. Destruir una vida es destruir un mundo.</p>
+						
+						  </div>				
+						</div>
+						  
+						<div class="item" id="slide4">
+						  <div class="carousel-caption">
+							<h4>4. Respetar la instituci&oacute;n del matrimonio</h4>
+							<p>El matrimonio es un acto divino. La uni&oacute;n de un hombre y una mujer es el reflejo de la unidad de Dios y Su creaci&oacute;n.</p>
+						
+						  </div>				
+						</div>
+						  
+						  
+						<div class="item" id="slide5">
+						  <div class="carousel-caption">
+							<h4>5. No robar</h4>
+							<p>Cond&uacute;cete honestamente en todas tus transacciones.</p>
+						
+						  </div>				
+						</div>
+						  
+						  
+						<div class="item" id="slide6">
+						  <div class="carousel-caption">
+							<h4>6. Respetar a las criaturas de Dios</h4>
+							<p>No causar sufrimiento innecesario a animal alguno.</p>
+						
+						  </div>				
+						</div>
+						  
+						<div class="item" id="slide7">
+						  <div class="carousel-caption">
+							<h4>7. Mantener la justicia</h4>
+							<p>Cuando corregimos los errores de la sociedad, actuamos como socios en el acto de sustentar la creaci&oacute;n.</p>
+						
+						  </div>				
+						</div>
+						  
+						
+					  </div><!--end carousel inner-->
+					
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					  </a>
+					
+				</div><!--end carousel-->
+
+	  
+		</div><!--end container-->
+	  
+	  
+	  
+<!--	Modal Quienes Somos-->
+	  
+
+		<!-- Modal -->
+		<div class="modal fade" id="quienesSomosModal" tabindex="-1" role="dialog" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" id="modal-dialogo1">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h1 class="modal-title" id="quienesSomosModalLabel">Quienes somos</h1>				  
+								  
+			  	</div>
+			  <div class="modal-body">
+				
+				  <div id="video1">
+				
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/Qon2PohUJQM" frameborder="0" allowfullscreen></iframe>
+				  
+				</div>
+				  
+				                  
+              <div id="row1" class="row">
+              
+                  <div class="quienesSomosimg pull-right"></div>  
+                  
+                  <p id="quienesSomostexto"> Bnei Noaj Costa Rica Nam de tractavissent, sint ad aliquip e culpa, nulla ullamco de philosophari, 
+                      multos ut in nisi quibusdam. Ut aut velit illum tamen, id ubi aute doctrina, 
+                      nescius praetermissum ut incididunt ad non quem a lorem. Incididunt quis commodo 
+                      excepteur, ut fore praetermissum. Ingeniis dolore malis qui noster, cillum 
+                      nostrud e mentitum, legam admodum tempor iis eiusmod se aliqua, eu noster minim 
+                      labore commodo ut mandaremus duis eram an esse in ingeniis domesticarum iis 
+                      fabulas, anim ut doctrina a tamen. Senserit minim hic aliquip firmissimum, 
+                      laboris aute culpa doctrina noster. Minim appellat commodo. Qui varias cupidatat 
+                      eruditionem e fore ne ita elit admodum ne singulis qui singulis ita proident 
+                      nisi mandaremus. </p>                 
+
+				  
+			  </div>                  
+                  
+              <button type="button" class="btn btn-primary pull-right" id="cerrarQuienesSomos" data-dismiss="modal">Cerrar</button>
+                  
+              </div>       
+            
+			</div>
+		  </div>
+		</div> <!--end modal quienes somos-->
+      
+      
+      <!--  Modal Contactenos-->
+      
+        <div class="modal fade" id="contactenosModal" tabindex="-1" role="dialog" aria-labelledby="contactenosModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="modal-dialogo2">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="contactenosModalLabel">Cont&aacute;ctanos</h1>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div id="map-container" class=""></div>
+                    </div> <!--end mapa-->
+                    
+                    <div class="row">
+                    
+                        <div class="col-lg-6" id="informaionContacto">
+                            <h2>Informaci&oacute;n de Contacto</h2>                            
+                            
+                            <div id="infoContainer"></div>
+                            
+                            <h4>Direcci&oacute;n:</h4>
+                            <p>Guadalupe Centro, de la Municipalidad 200 mts. Sur y 200 mts. Oeste.</p>
+
+                            <h4>Tel&eacute;fonos</h4>
+
+                            <p>(506) 8338-0084</p>
+                            <p>(506) 2222-2222</p>    
+                        
+                        </div> <!-- end informacion contacto-->
+                        
+                        <div class="col-lg-6" id="formularioContacto">
+                        
+                        <form class="myfirstform" role="form">
+                                <!--  
+                                    <legend>Contact Form</legend>		-->
+                                    <div class="form-group">
+                                        <label class="control-label">Nombre</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                <input type="text" class="form-control" name="name" placeholder="Name">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Correo Electr&oacute;nico</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                            </div>
+                                        </div>	
+                                    </div>                                                           
+                            
+                                    <div class="form-group ">
+                                        <label class="control-label">Mensaje</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                <textarea name="msg" class="form-control " rows="4" cols="78" placeholder="Enter your message here"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="controls" style="margin-left: 40%;">
+
+                                       
+
+                                      </div>
+                                    </form>
+                        
+                        
+                        </div>
+                        
+                            
+                    
+                    </div><!--end formulario contacto-->
+                    
+                </div>
+                  <button type="submit" id="mybtn"  class="btn btn-primary pull-right" >Enviar</button>
+                <button type="button" class="btn btn-primary pull-right" id="cerrarFormularioContacto" data-dismiss="modal">Cerrar</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>	  
+	  
+
+<!-- All Javascript at the bottom of the page for faster page loading -->
+
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.3.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script> 
+ 
+  </body>
+</html>

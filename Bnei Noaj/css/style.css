@@ -1,0 +1,26 @@
+/*typography*/
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
+
+/*body*/
+
+@import url('../css/body.css');
+
+/* navbar*/
+
+@import url('../css/navbar.css');
+
+
+/*carousel*/
+
+@import url(../css/carousel.css);
+
+
+/*modal quienes somos*/
+
+@import url(../css/modal_quienes_somos.css);
+
+/*modal contactano*/
+
+@import url('../css/modal_contactanos.css');

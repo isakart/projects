@@ -1,0 +1,117 @@
+/*modal imge */
+
+.quienesSomosimg
+{
+	background: url('../img/quienes_somos.jpg');
+	background-repeat:no-repeat;
+	background-size: auto 25vh;
+	height: 25vh;
+	width: 16vw;
+    margin: 0 0 3% 3%;
+    
+}
+
+#quienesSomostexto
+{
+    margin-top: 2%;
+    font-size: 15px;
+    text-align: justify;
+}
+
+#row1
+{
+padding-left: 10%;
+padding-right: 10%;
+
+}
+
+/*modal style*/
+
+.modal-dialog, .modal-content
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 70vw;
+    height: 90vh;
+    background: rgba(255,255,255,0.55);
+    border-radius: 20px;
+}
+
+.modal-body
+{
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 95vh;
+}
+
+/*video style*/
+
+#video1
+{
+	margin-right: auto;
+	margin-left: auto;
+    margin-bottom: 5%;
+    width: 420px;
+    height: 315px;
+  
+}
+
+/*header*/
+
+.modal-header
+{
+    border-bottom: none;
+}
+/*footer*/
+
+.modal-footer
+{
+    border-top: none;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    
+    .modal-dialog, .modal-content
+    {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90vw;
+        height: 100%;
+        background: rgba(255,255,255,0.55);
+        border-radius: 20px;
+    }
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) 
+{
+    .modal-dialog, .modal-content
+    {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90vw;
+        height: 100vh;
+        background: rgba(255,255,255,0.55);
+        border-radius: 20px;
+    }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) 
+{
+  
+
+	
+}
+
+
